@@ -13,9 +13,12 @@ cd Computer-Othello
 ### 2. Dependencies
 Ensure you have the following dependencies installed:
 
-- CMake: For building the project.
-- A C++ Compiler: (e.g., GCC, Clang, or MSVC).
-- qcustomplot library: Included in the repository; no need to install separately.
+- CMake: For building the project. Download it here: https://cmake.org/download/
+- A C++ Compiler:
+  - GCC (Linux/Mac users): https://gcc.gnu.org/install/
+  - Clang (Linux/Mac users): https://clang.llvm.org/get_started.html
+  - MSVC (Windows users, included with Visual Studio): https://visualstudio.microsoft.com/
+- Qt GUI Library: Required for GUI-related components. Download it here: https://www.qt.io/download
 
 ### 3. File Structure
 The repository includes the following:
