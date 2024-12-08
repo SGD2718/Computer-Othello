@@ -139,15 +139,15 @@ uint64_t Board::get_legal_moves() const {
         legal |= flip >> 7;
 
         // shift 8
-        flip = mO & (P << 8);
-        flip |= mO & (flip << 8);
-        pre = mO & (mO << 8);
+        flip = O & (P << 8);
+        flip |= O & (flip << 8);
+        pre = O & (O << 8);
         flip |= pre & (flip << 16);
         flip |= pre & (flip << 16);
         legal |= flip << 8;
 
-        flip = mO & (P >> 8);
-        flip |= mO & (flip >> 8);
+        flip = O & (P >> 8);
+        flip |= O & (flip >> 8);
         pre >>= 8;
         flip |= pre & (flip >> 16);
         flip |= pre & (flip >> 16);
