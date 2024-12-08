@@ -11,7 +11,7 @@
 #define RUN_TRAINING_MODE false
 #define TUNE_MODE_MIDGAME true
 #define TUNE_PROBCUT false
-#define USE_SIMD false
+#define USE_SIMD true
 #define USE_MPC true
 #define USE_ETC true
 #define LOCK_TT false
