@@ -1,3 +1,7 @@
+NOTE: Unfortunately, the original version-controlled repository was too large to upload to GitHub because I had accidentally committed several hundred massive binary game datasets rather than adding them to `.gitignore`. Instead, I have provided a .txt file containing all the commit messages.
+
+---
+
 # Computer Othello Bot
 
 ## How to Download and Build
