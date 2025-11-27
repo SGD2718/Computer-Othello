@@ -138,8 +138,10 @@ namespace engine {
                 value = -pv_search(node, depth - 1, -beta, -alpha, false, moveList[i].legalMask, isEndSearch, running);
             } else {
                 value = -null_window_search(node, depth - 1, -alpha - 1, false, moveList[i].legalMask, isEndSearch, running);
-                if (alpha < value && value < beta)
-                    value = -pv_search(node, depth - 1, -beta, -alpha, false, moveList[i].legalMask, isEndSearch, running);
+                if (alpha < value && value < beta) {
+                    int value2 = -pv_search(node, depth - 1, -beta, -value, false, moveList[i].legalMask, isEndSearch, running);
+                    value = std::max(value, value2);
+                }
             }
             node->undo_move(moveList[i].move);
 
@@ -246,8 +248,10 @@ namespace engine {
                 value = -pv_search(node, depth - 1, -beta, -alpha, false, moveList[i].legalMask, isEndSearch, running);
             } else {
                 value = -null_window_search(node, depth - 1, -alpha - 1, false, moveList[i].legalMask, isEndSearch, running);
-                if (alpha < value && value < beta)
-                    value = -pv_search(node, depth - 1, -beta, -alpha, false, moveList[i].legalMask, isEndSearch, running);
+                if (alpha < value && value < beta) {
+                    int value2 = -pv_search(node, depth - 1, -beta, -value, false, moveList[i].legalMask, isEndSearch, running);
+                    value = std::max(value, value2);
+                }
             }
             node->undo_move(moveList[i].move);
 
