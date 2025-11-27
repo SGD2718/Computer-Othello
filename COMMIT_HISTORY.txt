@@ -1,0 +1,235 @@
+* 520629b (HEAD -> wip, origin/wip) Updated gitignore
+* 19dc0e7 Updated gitignore
+* 60101b4 It appears that i forgot to push something
+* 593039f Modified for Evaluation Move for loop to be less cursed
+* 04bf6bf Removed verbose for endgame search and passes
+* e6154b8 Removed a few comments
+* 47d0187 Retuned MPC
+* cc66e22 Retuned MPC
+* f1d7aa4 Fixed ProbCut
+* 10ca67c Fixed alphabeta1 functions
+* 5e57b9d Added MPC
+* d75764b Added MPC
+* 98e7f24 Fixed evaluation bar showing zero after game ends
+* ce5b82b Cleanup
+* 37df465 Fixed evaluation bar showing zero after game ends
+* 925d3b3 Fixed evaluation bar showing zero after game ends
+* 4800728 Fixed UI freezing after game over
+* 3517252 I hit save
+* cbbfecc Build
+* 1fb44d7 Cleanup
+* ba3b3bb Fixed UI bugs
+* ed7e5b8 Fixed format time
+* 80e4543 Fixed UI bugs
+* 5e385bb Removed Quiescence search
+* f3641ff Removed lower and upper evaluation bounds
+| * 26d78ee (refs/stash) On wip: !!GitHub_Desktop<master>
+|/| 
+| * fbf87a0 index on wip: 2453838 New Evaluation Function + File cleanup
+|/  
+* 2453838 New Evaluation Function + File cleanup
+* 3e1e1a9 New Evaluation Function + File cleanup
+* 662e13e New Evaluation Function + File cleanup
+* 154e226 New Evaluation Function + File cleanup
+* 401df02 (origin/master, origin/HEAD, master) Fixed evaluation bar showing the wrong color
+* 7878112 (origin/v2, v2) Fixed evaluation bar showing the wrong color
+* a37849b idk
+* e21a45f Fixed endgame solver and added perfect search at 20 empty discs. Also added an evaluation bar.
+* f6cb21e What are these unversioned files
+* 980f717 Added GUI (WIP) and fixed Game class.
+* 3ea240f - Search now passes the SearchNode as a pointer instead of by reference. Resulted in a 50% speed increase. - Added an endgame solver 24. - Renamed file "MidSearch.cpp" to "Search.cpp"
+* 9f1ea1c What are these files
+* baa7581 - Get rekt Isaiah (first human defeated) - Refactored so that search functions pass the SearchNode struct instead of the board and search result.
+* a281c74 Changed a division to a bit shift
+* 236c724 Fixed evaluation bit shifting the sign bit
+* ce2d399 What are these
+* 8390e01 Build
+* d5a5b8a Created backup weights
+* 68c6826 retrained to be from the current player's perspective.
+* 1ded674 play_moves(const string& moveSequence) now ignores colons.
+(base) benjaminlee@MacBook-Pro-2 Othello % git log --all --decorate --oneline --graph
+* 520629b (HEAD -> wip, origin/wip) Updated gitignore
+* 19dc0e7 Updated gitignore
+* 60101b4 It appears that i forgot to push something
+* 593039f Modified for Evaluation Move for loop to be less cursed
+* 04bf6bf Removed verbose for endgame search and passes
+* e6154b8 Removed a few comments
+* 47d0187 Retuned MPC
+* cc66e22 Retuned MPC
+* f1d7aa4 Fixed ProbCut
+* 10ca67c Fixed alphabeta1 functions
+* 5e57b9d Added MPC
+* d75764b Added MPC
+* 98e7f24 Fixed evaluation bar showing zero after game ends
+* ce5b82b Cleanup
+* 37df465 Fixed evaluation bar showing zero after game ends
+* 925d3b3 Fixed evaluation bar showing zero after game ends
+* 4800728 Fixed UI freezing after game over
+* 3517252 I hit save
+* cbbfecc Build
+* 1fb44d7 Cleanup
+* ba3b3bb Fixed UI bugs
+* ed7e5b8 Fixed format time
+* 80e4543 Fixed UI bugs
+* 5e385bb Removed Quiescence search
+* f3641ff Removed lower and upper evaluation bounds
+| * 26d78ee (refs/stash) On wip: !!GitHub_Desktop<master>
+|/| 
+| * fbf87a0 index on wip: 2453838 New Evaluation Function + File cleanup
+|/  
+* 2453838 New Evaluation Function + File cleanup
+* 3e1e1a9 New Evaluation Function + File cleanup
+* 662e13e New Evaluation Function + File cleanup
+* 154e226 New Evaluation Function + File cleanup
+* 401df02 (origin/master, origin/HEAD, master) Fixed evaluation bar showing the wrong color
+* 7878112 (origin/v2, v2) Fixed evaluation bar showing the wrong color
+* a37849b idk
+* e21a45f Fixed endgame solver and added perfect search at 20 empty discs. Also added an evaluation bar.
+* f6cb21e What are these unversioned files
+* 980f717 Added GUI (WIP) and fixed Game class.
+* 3ea240f - Search now passes the SearchNode as a pointer instead of by reference. Resulted in a 50% speed increase. - Added an endgame solver 24. - Renamed file "MidSearch.cpp" to "Search.cpp"
+* 9f1ea1c What are these files
+* baa7581 - Get rekt Isaiah (first human defeated) - Refactored so that search functions pass the SearchNode struct instead of the board and search result.
+* a281c74 Changed a division to a bit shift
+* 236c724 Fixed evaluation bit shifting the sign bit
+* ce2d399 What are these
+* 8390e01 Build
+* d5a5b8a Created backup weights
+* 68c6826 retrained to be from the current player's perspective.
+* 1ded674 play_moves(const string& moveSequence) now ignores colons.
+* 80ef28c Added a newline
+* 5450c87 Search statistics now have numbers grouped with commas for readability.
+* 231e10c Moved verbose function to util namespace
+* 7a27c91 Moved verbose function to util namespace
+* 670d890 changed SearchResult numNodes and nps to type long long instead of unsigned long long
+* 5b4ac33 Fixed bug that broke diagonal-9 flips
+* de66498 I stole some stuff from Egaroucid, and now it's much, much faster
+* f19b0f7 Sped up the implementation of Othello
+* 74cc24d Updated to account for the fact that WeightBuilder and LineEncoders were moved
+* a0d4f17 Evaluation will now be displayed from black's perspective.
+* e89b114 Removed Patterns subdirectory
+* 805bbcf Moved to Evaluation directory
+* 0d18f2e It works
+* 789a3ac It works
+* 37782e4 It works
+* 5419945 Removed `evaluate_full` private method from WeightBuilder class as it was no longer needed.
+* 4929742 changed back the stage calculation
+* 27918e6 Corrected weight file parsing constructor to use commas as the delimiter and corrected hv3 and hv4 pattern indexing.
+* 6e58220 Fixed the hv3 and hv4 pattern indexing, corrected weight extrapolation, and removed violation counter from fill_symmetric_weights since everything works now.
+* 03317cd Finally trained the evaluation function correctly. "weights raw.txt" contains the unprocessed weights and "weights.txt" contains the weights with the post-processing.
+* ecc39a8 Moved weights file to assets/TrainingData directory
+* 721e526 The scatter plot UI code is now contained entirely within the test method.
+* ff0dd50 Fixed indices for H4 and H5
+* 032f62e Evaluation is now negated correctly.
+* 35c507c moved
+* 5443ddb Training will now occur only on one symmetry of each feature (so that mirrors are not included in the training process and will be filled in after training).
+* 9ed3d7c Refactored to include hopscotch-map and qcustomplot libraries
+* 4b99893 Build
+* da8809b Build
+* 5b24525 what are these .cpp.o files
+* 9e5ec4b Training complete
+* 1467882 Created backup weight file
+* de586ff what even is this
+* f173cfa Deprecated
+* cb36c00 Removed dependency on LineEncoders
+* bf03622 Removed depricated code
+* b2e6e47 Removed old dataset
+* 61fbb27 added Eigen library and removed TBB
+* 713af96 removed
+* 33820e5 depth is now an int
+* befb40b Changed win, loss, and draw constant to doubles
+* b3ef085 Changed position value from integer type to floating point type
+* 1f5fd0b Removed
+* 93c1d34 removed or renamed
+* d1627b6 Moved to Bot/Search
+* 6c02519 Made it possible to compiler auto-vectorize index computation.
+* dba07b2 Removed unnecessary weight files
+* 208f318 Added indices for each position on the board
+* b6898dd Removed unnecessary dependencies
+* 2b01496 Moved to the Patterns directory
+* 8155e16 Removed deprecated code.
+* a649b18 Conducted some speed tests to optimize legal move computation and flips and performed a clean-up.
+* 5a64a4c Rewrote Evaluation class to use the new pattern-based evaluation function
+* 18cf7bb Put the evaluation under the bot::eval namespace
+* 283be00 Fixed load and save methods so that they can actually use different file paths
+* 73ea8f2 Reimplemented WeightBuilder class to use Eigen's LeastSquaresConjugateGradient solver.
+* 8ca3bfa Added more masks
+* f7f789a Created a new struct for the indices/encodings of patterns to avoid repetitive computations
+* f086937 Moved to the Patterns directory
+* 409aa67 Optimized/debugged legal move computation and flipping
+* f67865b Added new game dataset
+* dc6b73f Updated file path to the game dataset
+* ae40c61 Implemented WeightBuilder class to train the evaluation function.
+* 033a94f Will now evaluate stuff from black's perspective
+* a647c0c Implemented Pattern Builder class, which reads the precomputed files.
+* 935775b NegaScout and Quiescence Search now return 64-bit integers instead of 32-bit integers. Fixed typo in quiescence search.
+* f8adaf5 Added a new constructor based on who starts
+* 835ea74 NegaScout and Quiescence Search now return 64-bit integers instead of 32-bit integers. Fixed typo in quiescence search.
+* 3d12e61 NegaScout and Quiescence Search now return 64-bit integers instead of 32-bit integers. Fixed typo in quiescence search.
+* d2d07bb Added methods to mirror masks vertically and horizontally. Renamed make vertical mask to "transpose_mask"
+* 3ae8580 Added masks for 2x4, 2x5, 3x3, and 3x4 corners.
+* b2c1120 Added file to store the weights for the heuristics of the evaluation function.
+* c004a30 evaluation is now a 64-bit integer
+* ffa0a72 Endgame no longer uses quiescence search for speed.
+* fd7a72b Implemented mobility builder class
+* 006345b Added files to store data from game parser
+* e8df426 Implemented Game Parser class
+* 400a11e build
+* 824dd8a added eunversioned files
+* 08dafc4 Build
+* 42360f3 Added something to keep track of whose turn it is at the root
+* 94817cf Made iterative deepening will now when the position is solved
+* 001a29c Tuned weights
+* 6dbe040 Tuned weights a bit more
+* f5e1b31 Made evaluation match the current player's perspective to work with NegaScout
+* 31d5e0c Fixed move ordering with transposition table
+* dcc4660 Renamed AlphaBeta.cpp to IterativeDeepening.cpp
+* 66fa3af Added new source file for Agent class methods
+* 44cf554 Removed old PVS implementation
+* 268d57e Added QuiescentSearch.cpp
+* 7e8cc1c Added files
+* 6a15e38 Build
+* de116da The bot now runs on the main thread instead of a separate thread as this seems to have made it much faster.
+* 94cad66 Evaluation Tuning
+* e600cff make_vertical_mask now fully transposes the mask
+* 5cd2364 Updated some weights
+* 608b561 Old implementation of PVS (the new one negates like it's supposed to)
+* ddb1435 Added game dataset and stuff to parse it
+* 5f9867d Added assert statements to ensure that the move is fully legal
+* 9d43ef9 Fixed NegaScout.cpp so that it stops returning null moves
+* 49d5b9c Implemented Iterative deepening correctly
+* 1bc96fd Committing unversioned files (idk what they're for)
+* 1704e30 Fixed argument errors + build
+* f61096c Implemented Stability Heuristic Refactored Evaluation into its own class
+* 35b2328 Split into multiple files
+* 7e38bcd Added masks.h
+* dee5a2e started implementing stability heuristic, and implemented negascout, added history and killer-moves move ordering heuristics.
+* cf2378d Added many more weights
+* a38807f Created bitmasks for important sections of the board
+* 4d83425 Build
+* 7ecabc0 Optimized move generation and playing
+* c831694 Improved Evaluation Function - Weights work as intended - Potential Mobility - Correct implementation of mobility - Corner captures
+* 99d1dc6 Fixed null move in iterative deepening
+* 5375d8c Added Backlog
+* 2dca641 ?
+* 813f702 build
+* 477f599 More evaluation function tuning
+* 2368f3a Fixed crashing from illegal moves in iterative_deepening
+* 67a3b31 Build
+* 9e181fd Updated heuristic evaluation weights
+* dfaa768 Enabled PvC mode
+* 4b702af Removed Random.h and Random.cpp in favor of using the standard library random functions
+* 743b368 Fixed inappropriate pruning Evaluation function no longer negates the value if it's white's turn
+* 1b53567 Fixed inappropriate pruning Evaluation function no longer negates the value if it's white's turn
+* 03f4564 Fixed bug causing many hash collisions
+* ef5bc56 Fixed bugs with othello bitboard
+* aba7937 It can now play, but apparently not well
+* e72c9fd Implemented single-threaded iterative-deepening (untested)
+* 89f0efd Implemented a better alpha beta pruning search that utilizes the transposition table
+* 6621f7a Implemented a better alpha beta pruning search that utilizes the transposition table
+* 1fbe567 Made alpha beta pruning use reference variables
+* 3b96bac Implemented DFS and made outline for iterative deepening
+* 9f102fb Made evaluation function return stuff and made it independent of the current player. Also made evaluation function consider mobility and score difference
+* 6a82edb Added evaluation function
+* 8912383 Added hashing for Othello bitboards
+* bf7f627 Initial Commit: Bitboard Othello implementation exists and classes for αβ and a hashtable exist.
