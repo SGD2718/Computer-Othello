@@ -1,4 +1,4 @@
-NOTE: Unfortunately, the original version-controlled repository was too large to upload to GitHub because I had accidentally committed several hundred massive binary game datasets rather than adding them to `.gitignore`. Instead, I have provided a .txt file containing all the commit messages.
+NOTE: Unfortunately, the original version-controlled repository was too large to upload to GitHub because I had accidentally committed several hundred massive binary game datasets rather than adding them to `.gitignore`. Instead, I have included [COMMIT_HISTORY.txt](https://github.com/SGD2718/Computer-Othello/blob/main/COMMIT_HISTORY.txt), which contains all the commit messages from the original.
 
 ---
 
