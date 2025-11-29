@@ -1,4 +1,8 @@
-NOTE: Unfortunately, the original version-controlled repository was too large to upload to GitHub because I had accidentally committed several hundred massive binary game datasets rather than adding them to `.gitignore`. Instead, I have included [COMMIT_HISTORY.txt](https://github.com/SGD2718/Computer-Othello/blob/main/COMMIT_HISTORY.txt), which contains all the commit messages from the original.
+**NOTE:** Unfortunately, the original version-controlled repository was too large to upload to GitHub because I accidentally committed several hundred binary game datasets (each file was 1GB) to the local repository before it was uploaded to GitHub. Instead, I have included [COMMIT_HISTORY.txt](https://github.com/SGD2718/Computer-Othello/blob/main/COMMIT_HISTORY.txt), which contains all the commit messages from the original.
+
+Also, this was developed on a MacBook, so there is a slight chance that it doesn't work on Windows/Linux.
+
+- Benjamin Lee
 
 ---
 
@@ -22,7 +26,7 @@ Ensure you have the following dependencies installed:
   - GCC (Linux/Mac users): https://gcc.gnu.org/install/
   - Clang (Linux/Mac users): https://clang.llvm.org/get_started.html
   - MSVC (Windows users, included with Visual Studio): https://visualstudio.microsoft.com/
-- Qt GUI Library: Required for GUI-related components. Download it here: https://www.qt.io/download
+- Qt 6.9.3 GUI Library: Required for GUI-related components. Download it here: https://www.qt.io/download
 
 ### 3. File Structure
 The repository includes the following:
